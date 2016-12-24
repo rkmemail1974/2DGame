@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Messaging\MessageClientReceiver.cs" />
     <Compile Include="Assets\Scripts\Messaging\MessagingClientBroadcast.cs" />
     <Compile Include="Assets\Scripts\Messaging\MessagingManager.cs" />
+    <Compile Include="Assets\Scripts\Navigation\NavigationManager.cs" />
     <Compile Include="Assets\Scripts\Navigation\NavigationPrompt.cs" />
     <Compile Include="Assets\Scripts\ScriptingObjects.cs" />
     <Compile Include="Assets\Scripts\Sorting.cs" />

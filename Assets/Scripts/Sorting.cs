@@ -14,14 +14,14 @@ public class Sorting : MonoBehaviour {
 	void Update () {
         if (transform.position.y >= player.transform.position.y)
         {
-            Debug.Log("behind player");
+            //Debug.Log("behind player");
             GetComponent<SpriteRenderer>().sortingOrder = (player.GetComponent<SpriteRenderer>().sortingOrder) - 1;
             GetComponents<BoxCollider2D>()[1].enabled = false;
             GetComponents <BoxCollider2D>()[2].enabled = true;
         }
         if (transform.position.y < player.transform.position.y)
         {
-            Debug.Log("in front of player");
+           // Debug.Log("in front of player");
             GetComponent<SpriteRenderer>().sortingOrder = (player.GetComponent<SpriteRenderer>().sortingOrder) + 1;
             GetComponents<BoxCollider2D>()[1].enabled = true;
             GetComponents<BoxCollider2D>()[2].enabled = false;

@@ -4,13 +4,16 @@ using System.Collections;
 
 public class NavigationPrompt : MonoBehaviour {
 
-    void OnCollisionEnter2D (Collision2D col)
+    void OnTriggerEnter2D (Collider2D col)
     {
-        if (col.gameObject.CompareTag("Borders"))
+        if (NavigationManager.CanNavigate(this.tag))
         {
-            Debug.Log("Leave town");
+         
+            Debug.Log("attempting to exit via " + tag);
+            NavigationManager.NavigateTo(this.tag);
         }
     }
+
 	// Use this for initialization
 	void Start () {
 	

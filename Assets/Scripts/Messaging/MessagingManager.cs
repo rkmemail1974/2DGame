@@ -7,6 +7,12 @@ public class MessagingManager : MonoBehaviour {
     public static MessagingManager Instance { get; private set; }
     private List<Action> subscribers = new List<Action>();
     
+    public struct Route
+    {
+        public string RouteDescription;
+        public bool CanTravel;
+
+    }
 
     void Awake()
     {
